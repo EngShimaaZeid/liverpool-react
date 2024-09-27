@@ -1,0 +1,13 @@
+/* src/FloatingBox.css */
+.floating-box {
+  position: fixed; /* Keep it fixed to the viewport */
+  right: 20px; /* Adjust based on your design */
+  width: 300px; /* Adjust based on your design */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensures it stays on top */
+  transition: top 0.3s ease; /* Smooth transition */
+}
