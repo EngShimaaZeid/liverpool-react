@@ -5,9 +5,11 @@ import Part2 from './Part2';
 import Part3 from './Part3';
 import Part4 from './Part4';
 import YellowArticle from './YellowArticle';
-
+import FloatCombine from "./FloatCombine";
+import FloatPart from "./FloatPart";
 import Footer from './Footer';
 import './App.css';
+
 const App = () => {
   return (
     <div>
@@ -15,7 +17,8 @@ const App = () => {
       <Part1/>
       <Part2/>
       <Part3/>        
-      <FloatingBox />
+      <FloatCombine/>
+
       <YellowArticle/>
       <Part4/>
       <Footer/>

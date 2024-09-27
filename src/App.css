@@ -4,7 +4,7 @@ body {
 ul li:hover .card-body {
   transform: translateY(-7px); /* Move text up by 5 pixels on hover */
 }
-.headbutton {
+.redheadbutton {
   border-radius: 20px;
   width: auto;
   max-width: 150px;
@@ -69,10 +69,21 @@ ul li:hover .card-body {
   padding-bottom: 10%;
 }
 
-.part2 .headbutton {
-  background-color: black;
-  color: white;
-}
+.blackheadbutton {
+    border-radius: 20px;
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    background-color: black;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    color: white;
+    font-weight: 300;
+    font-family: Oswald;
+  }
 
 .part2 ul {
   padding: 0;
@@ -249,4 +260,20 @@ ul li:hover .card-body {
 
 }
 
+.floatpart{
+  background-color: white;
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 25%;
+  padding-bottom: 8%;
+  font-size: 20px;
+
+}
+.floatpart img{
+  width:100%;
+  width: 100%;
+  aspect-ratio: 1; 
+  object-fit: cover; 
+  max-width: 700px; 
+}
 

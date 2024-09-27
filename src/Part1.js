@@ -5,7 +5,7 @@ function App() {
   return (
 
     <div class="part1">
-      <button class="headbutton title">Headline</button>
+      <button class="blackheadbutton title">Headline</button>
       <ul>
         <li ><Card1/></li>
         <li><Card1/></li>

@@ -5,7 +5,7 @@ function App() {
   return (
 
     <div class="part1">
-      <button class="headbutton title">LFC Women</button>
+      <button class="redheadbutton title">LFC Women</button>
 
       <ul>
         <li ><Card1/></li>

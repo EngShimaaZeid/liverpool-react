@@ -5,7 +5,7 @@ function App() {
   return (
 
     <div class="part2">
-        <button class="headbutton title">LFC Retail</button>
+        <button class="blackheadbutton title">LFC Retail</button>
 
      <ul>
         <li><Card2/></li>
