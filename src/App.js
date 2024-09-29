@@ -1,12 +1,10 @@
 import React from 'react';
-import FloatingBox from './FloatingBox';
-import Part1 from './Part1';
-import Part2 from './Part2';
-import Part3 from './Part3';
-import Part4 from './Part4';
-import YellowArticle from './YellowArticle';
-import FloatCombine from "./FloatCombine";
-import FloatPart from "./FloatPart";
+import HeadLines from './components/HeadLines';
+import LfcRetail from './components/LfcRetail';
+import LfcWomen from './components/LfcWomen';
+import ClubAndCommunity from './components/ClubAndCommunity';
+import YellowArticle from './components/YellowArticle';
+import FloatCombine from "./components/FloatCombine";
 import Footer from './Footer';
 import './App.css';
 
@@ -14,13 +12,13 @@ const App = () => {
   return (
     <div>
       <h1 >Liverpool FC Homepage</h1>
-      <Part1/>
-      <Part2/>
-      <Part3/>        
+      <HeadLines/>
+      <LfcRetail/>
+      <LfcWomen/>        
       <FloatCombine/>
 
       <YellowArticle/>
-      <Part4/>
+      <ClubAndCommunity/>
       <Footer/>
     </div>
   );

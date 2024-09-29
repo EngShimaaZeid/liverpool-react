@@ -1,6 +1,20 @@
 import React from "react";
-import Card1 from "./Card1"
-
+import Card1 from "./ui/Card1"
+const logos = [
+    { id: 1, src: './imgs/f24.png', alt: 'Carlsberg' },
+    { id: 2, src: './imgs/f22.png', alt: 'EA Sports' },
+    { id: 3, src: './imgs/f23.png', alt: 'Extreme Networks' },
+    { id: 4, src: './imgs/f24.png', alt: 'Google Pixel' },
+    { id: 5, src: './imgs/f23.png', alt: 'Husqvarna' },
+    { id: 6, src: './imgs/f22.png', alt: 'Japan Airlines' },
+    { id: 7, src: './imgs/f23.png', alt: 'Kodansha' },
+    { id: 8, src: './imgs/f24.png', alt: 'Lucozade' },
+    { id: 9, src: './imgs/f22.png', alt: 'Orion' },
+    { id: 10, src: './imgs/f23.png', alt: 'Peloton' },
+    { id: 11, src: './imgs/f24.png', alt: 'Bird logo' },
+    { id: 12, src: './imgs/f22.png', alt: 'UPS' },
+    { id: 13, src: './imgs/f24.png', alt: 'Wasabi' }
+  ];
 function App() {
   return (
     <div>
@@ -15,18 +29,17 @@ function App() {
     
     </div>
     
-    <div class="footer2">
-    <ul class="image-list">
-    <li><img src="./imgs/f21.png"></img></li>
-    <li><img src="./imgs/f21.png"></img></li>
-    <li><img src="./imgs/f21.png"></img></li>
-    <li><img src="./imgs/f21.png"></img></li>
-    <li><img src="./imgs/f21.png"></img></li>
-    <li><img src="./imgs/f21.png"></img></li>
-    <li><img src="./imgs/f21.png"></img></li>
-    <li><img src="./imgs/f21.png"></img></li>
 
-     </ul>
+    <div class="footer2">
+    <div className="logo-container">
+      <ul className="logo-list">
+        {logos.map(logo => (
+          <li key={logo.id}>
+            <img src={logo.src} alt={logo.alt} className="logo-image" />
+          </li>
+        ))}
+      </ul>
+    </div>
     </div>
     <div class="footer3">
         <p class="copyrights">

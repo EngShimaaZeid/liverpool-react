@@ -4,13 +4,13 @@ body {
 ul li:hover .card-body {
   transform: translateY(-7px); /* Move text up by 5 pixels on hover */
 }
-.redheadbutton {
+.redHeadButton {
   border-radius: 20px;
   width: auto;
   max-width: 150px;
   height: auto;
   background-color: #B71515;
-  margin-left: 5%;
+  margin-left: 1%;
   margin-top: 5%;
   padding: 10px;
   border: none;
@@ -18,15 +18,51 @@ ul li:hover .card-body {
   color: white;
   font-weight: 300;
 }
-
+.buyButton{
+  width:40%;
+  background-color: black;
+  color: white;
+  font-family: Oswald;
+  font-size: large;
+  text-align: center;
+  margin: 10%;
+}
 .title {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
 }
+.longCard{
+  background-color:#00634D ;
+  padding: 7%;
+  height: 400px;
+}
+.longCard .buyButton{
+  position: absolute;
+  bottom: 10px; 
+  left: 40%; 
+  transform: translateX(-50%); 
+  width: 80%;
+  height: 15%;
+  text-align: left;
+  padding-top: 0px;
+}
+.longCard .card-body{
+  font-size: 22px;
+  font-style: normal;
+  position: absolute;
+  top: 10px; 
+  padding-right: 5%;
+}
+.longCard .title{
+  font-size: 24px;
 
+
+}
 .part1 {
   background-color: red;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .part1 ul {
@@ -62,14 +98,19 @@ ul li:hover .card-body {
 .part1 img {
   width: 100%;
   height: auto;
+
 }
 
 .part2 {
   background-color: white;
   padding-bottom: 10%;
 }
+.card2Img{
+  padding: 0%;
 
-.blackheadbutton {
+}
+
+.blackHeadButton {
     border-radius: 20px;
     width: auto;
     max-width: 150px;
@@ -121,7 +162,7 @@ ul li:hover .card-body {
 
 .button2 {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: #FFD700;
   color: black;
   text-align: left;
@@ -129,7 +170,7 @@ ul li:hover .card-body {
   font-size: 16px;
   font-weight: 700;
   width: auto;
-  max-width: 150px;
+  max-width: 250px;
   height: 70px;
   padding: 15px;
   border: none;
@@ -277,3 +318,29 @@ ul li:hover .card-body {
   max-width: 700px; 
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* Adjust this based on your layout */
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  max-width: 100px; /* Adjust size as needed */
+  height: auto;
+}
