@@ -6,12 +6,15 @@ import ClubAndCommunity from './components/ClubAndCommunity';
 import YellowArticle from './components/YellowArticle';
 import FloatCombine from "./components/FloatCombine";
 import Footer from './Footer';
+import Menu from './Menu.js';
+
 import './App.css';
 
 const App = () => {
   return (
     <div>
       <h1 >Liverpool FC Homepage</h1>
+      <Menu/>
       <HeadLines/>
       <LfcRetail/>
       <LfcWomen/>        

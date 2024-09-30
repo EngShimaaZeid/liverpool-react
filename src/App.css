@@ -1,6 +1,58 @@
 body {
   font-family: Oswald;
 }
+header{
+  width: 50%;
+  background-color:#DC0714;
+  color:white;
+  box-shadow: 1px 1px 10px #000;
+}
+#menu{
+  background-color:#DC0714;
+  padding-top: 0 px;
+  position: fixed;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Oswald;
+  list-style: none; 
+  
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#menu ul a {
+  list-style: none; 
+  color: white;
+  text-decoration: none;
+  font: bold 16px verdana;
+  padding: 10px; /* Fixed padding values */
+  background: transparent;
+  transition: border-bottom .7s;
+  -webkit-transition: border-bottom .7s;
+  -moz-transition: border-bottom .7s;
+    
+}
+
+#menu .logo {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between logo and menu */
+  vertical-align: right;
+}
+#menu ul a:hover{
+  border-bottom:6px solid #6e6e6e;
+}
+.vl {
+  border-left: 1px solid #6e6e6e;
+  height: 30px;
+  margin-left: -3px;
+  top: 0;
+}
 ul li:hover .card-body {
   transform: translateY(-7px); /* Move text up by 5 pixels on hover */
 }
@@ -60,7 +112,7 @@ ul li:hover .card-body {
 
 }
 .part1 {
-  background-color: red;
+  background-color: #DC0714;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -106,8 +158,11 @@ ul li:hover .card-body {
   padding-bottom: 10%;
 }
 .card2Img{
-  padding: 0%;
-
+  padding: 0px;    
+  margin: 0;    
+  width: 100%;   
+  display: block; 
+  border: none;  
 }
 
 .blackHeadButton {
@@ -222,55 +277,6 @@ ul li:hover .card-body {
   transition: transform 0.3s; /* Smooth transition for text */
 }
 
-.part4 ul li:hover .text {
-  transform: translateY(-7px); /* Move text up on hover */
-}
-
-.footer1 {
-  background-color: #DC0714;
-  color: white;
-  padding: 5%;
-}
-
-.image-list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.image-list li {
-  flex: 1;
-  margin: 0 5px;
-}
-
-.image-list img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.footer2 {
-  background-color: #B71515;
-  height: 20%;
-  padding: 7%;
-  margin: -0.5em;
-}
-
-.footer3 {
-  background-color: #911712;
-  color: white;
-  padding: 5%;
-  font-family: Oswald;
-  text-transform: uppercase;
-  font-size: 10px;
-}
-
-.footer3 .copyrights {
-  padding-bottom: 0;
-  text-align: center;
-}
-
 /* Media Queries for Responsiveness */
 @media (max-width: 900px) {
   .part1 ul li,
@@ -316,31 +322,4 @@ ul li:hover .card-body {
   aspect-ratio: 1; 
   object-fit: cover; 
   max-width: 700px; 
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.logo-list {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr); /* Adjust this based on your layout */
-  gap: 20px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.logo-list li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-image {
-  max-width: 100px; /* Adjust size as needed */
-  height: auto;
 }
