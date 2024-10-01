@@ -1,51 +1,53 @@
 import React, { useState, useEffect } from "react";
-import './App.css';  // Assuming you have a CSS file
+import './css/Menu.css'; // Your CSS file
 
 function Menu() {
-  const [isSticky, setIsSticky] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
+    const [isOpen, setIsOpen] = useState(false); // State for dropdown visibility
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {  // Change this value as per your need
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+
+            // Check if user has scrolled down from the top or is near the bottom
+            const isNearBottom = (documentHeight - scrollTop - windowHeight) < 100;
+
+            setIsSticky(scrollTop > 0 || isNearBottom);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen); 
     };
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div>
-      <header>
-        <section id="menu" className={isSticky ? 'sticky' : ''}>
+    return (
         <div>
-          <ul>
-            <a href="#">News</a>
-            <a href="#">Fixtures & Teams</a>
-            <a href="#">Tickets & Booking</a>
-            <a href="#">Shop</a>
-            <a href="#">Retail App</a>
-            <a href="#">Video</a>
-            <a href="#">More</a>
-            
-
-          </ul>
-          
-
-          </div>
-        </section>
-
-      </header>
-
-      
-    </div>
-  );
+            <header className={isSticky ? 'sticky' : ''}>
+                <div id="menu">
+                    <div className="menuToggle" onClick={toggleMenu}>
+                        ☰ {/* Icon for dropdown */}
+                    </div>
+                    <ul id="menuList" className={isOpen ? 'show' : ''}>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Fixtures & Teams</a></li>
+                        <li><a href="#">Tickets & Booking</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Retail App</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    );
 }
 
 export default Menu;

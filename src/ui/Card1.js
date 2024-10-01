@@ -3,7 +3,7 @@ import React from 'react';
 
 function Card1({ imgSrc, altText }) {
   return (
-    <a  >
+    <a>
     <img src={imgSrc} alt={altText}/>
     <div>
         <p class="card-body">

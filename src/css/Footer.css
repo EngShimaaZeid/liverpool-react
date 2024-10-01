@@ -1,6 +1,6 @@
-
 .footer0{
     background-color:#F6F6F6 ;
+    padding-left: 5%;
   }
   .footer0 img{
     height: 120px;
@@ -9,7 +9,7 @@
     padding-right: 0px;
   }
   
-.logoContainer {
+.footer0 .logoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@
     margin: 0;
   }
   
-  .logoList li {
+ .logoList li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,32 +42,26 @@
   .footer1 {
     background-color: #DC0714;
     color: white;
-    padding: 5%;
+    height: 1%;
   }
-  
-  .imageList {
-    list-style-type: none;
-    padding: 0;
+  .footer1 .logoContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    height: 250px;
+
   }
-  
-  .imageList li {
-    flex: 1;
-    margin: 0 5px;
+  .footer1 .logoImage{
+    height: 25px;
+    margin:60px;
+    padding-left: 10%;
   }
-  
-  .imageList img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
+ 
   .footer2 {
     background-color: #B71515;
     height: 20%;
-    padding: 7%;
-    margin: -0.5em;
+    justify-content: center;
   }
   
   .footer3 {
@@ -83,4 +77,24 @@
     padding-bottom: 0;
     text-align: center;
   }
+  @media (max-width: 768px) {
+    .logoList {
+        grid-template-columns: repeat(2, 1fr); /* 2 logos on small screens */
+    }
+    .footer1 .logoContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 5%;
+      height: 250px;
   
+    }
+    .footer1 .logoImage{
+      height: 25px;
+      margin:6px;
+      padding: 10%;
+    }
+    .footer2{
+      width: 100%;
+    }
+}
