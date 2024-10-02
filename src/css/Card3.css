@@ -1,0 +1,68 @@
+.card3{
+    padding: 10px;
+    height: 400px;
+    color:black;
+    
+  }
+  .card3 .cardBody{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 1%;
+    margin: 5px;
+  }
+  .card3 .cardTable{
+    padding: 15%;
+    padding-left: 5%;
+    
+  }
+  .score {
+    display: flex;
+    flex-direction: column!important;
+    background-color: #F6F6F6;
+    width:20%;
+    text-align: center;
+  }
+  .card3Logo{
+    padding-right: 0px!important;
+    width:100px!important;
+    height:50px!important;
+  }
+  .card3 .blackButton{
+    position: relative;
+    bottom: 10px; 
+    left: 0%; 
+    width: 80%;
+    height: 15%;
+    text-align: left;
+    padding-top: 0px;
+    background-color: black;
+    color: white;
+    padding: 8%;
+    font-family: Oswald;
+  
+  }
+  .card3 .rightlogo{
+    padding-right: 0px;
+    
+  
+  }
+  .card3 .time{
+    color:gray;
+  }
+  .card3 .leftLogo{
+    padding-left: 0px;
+    width: 30px;
+    height:30px;
+    margin: 10px;
+    
+  }
+  .card3 .teamDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  .team{
+    text-align: left;
+  
+  }

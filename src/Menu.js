@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from "react";
-import './css/Menu.css'; // Your CSS file
+import './css/Menu.css';
 
 function Menu() {
     const [isSticky, setIsSticky] = useState(false);
-    const [isOpen, setIsOpen] = useState(false); // State for dropdown visibility
+    const [isOpen, setIsOpen] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight;
-
-            // Check if user has scrolled down from the top or is near the bottom
-            const isNearBottom = (documentHeight - scrollTop - windowHeight) < 100;
-
-            setIsSticky(scrollTop > 0 || isNearBottom);
+            if (scrollTop > lastScrollY) {
+                // Scrolling down
+                setIsSticky(true);
+              } else if (scrollTop < lastScrollY) {
+                // Scrolling up
+                setIsSticky(true);
+              }
+            // Update lastScrollY to the current scroll position
+            setLastScrollY(scrollTop);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -22,19 +25,24 @@ function Menu() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [lastScrollY]);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen); 
+        setIsOpen(prev => !prev); 
     };
 
     return (
         <div>
-            <header className={isSticky ? 'sticky' : ''}>
+            <header className={`menu ${isSticky ? 'sticky' : ''}`}>
                 <div id="menu">
-                    <div className="menuToggle" onClick={toggleMenu}>
+                    <span className="menuToggle" onClick={toggleMenu}>
                         ☰ {/* Icon for dropdown */}
-                    </div>
+                    </span>
+                    
+                    <span>
+                        <img className="leftLogo" src="https://www.liverpoolfc.com/liverpoolfc_crest.webp" alt="Liverpool FC Crest" />
+                    </span>
+
                     <ul id="menuList" className={isOpen ? 'show' : ''}>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Fixtures & Teams</a></li>
@@ -44,6 +52,10 @@ function Menu() {
                         <li><a href="#">Video</a></li>
                         <li><a href="#">More</a></li>
                     </ul>
+
+                    <span>
+                        <img className="rightLogo"src="https://backend.liverpoolfc.com/sites/default/files/2021-06/2021-22_SCB_White.svg" alt="Liverpool FC Logo" />
+                    </span>
                 </div>
             </header>
         </div>

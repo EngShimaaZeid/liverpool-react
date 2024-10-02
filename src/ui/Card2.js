@@ -6,7 +6,7 @@ function Card2({ imgSrc, altText }) {
     <a  >
     <img class="card2Img" src={imgSrc} alt={altText}/>
     <div>
-        <p class="card-body">
+        <p class="cardBody">
             <span>
             LFC Nike Mens 24/25 Gilet Vest Black
             </span>

@@ -40,9 +40,25 @@ const footer2 = [
     { id: 4, src: 'https://backend.liverpoolfc.com/sites/default/files/2023-05/Expedia%20Logo%202023.svg', alt: 'Google Pixel' }
     
   ];
+  const footer00 = [
+    { id: 1, src: 'https://www.liverpoolfc.com/memorial-1989-desktop.svg', alt: 'Carlsberg' },
+    { id: 2, src: 'https://www.liverpoolfc.com/memorial-1985-desktop.svg', alt: 'EA Sports' },
+   
+  ];
 function App() {
   return (
     <div>
+       <div class="footer00">
+    <div className="logoContainer">
+      <ul className="logoList">
+        {footer00.map(logo => (
+          <li key={logo.id}>
+            <img src={logo.src}  className="logoImage" />
+          </li>
+        ))}
+      </ul>
+    </div>
+    </div>
       <div class="footer0">
     <div className="logoContainer">
       <ul className="logoList">

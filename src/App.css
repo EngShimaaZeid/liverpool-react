@@ -1,11 +1,19 @@
 body {
   font-family: Oswald;
 }
-ul li:hover .card-body {
+ul li:hover .cardBody {
   transform: translateY(-7px); /* Move text up by 5 pixels on hover */
   
 }
+.card3 ul li:hover .cardBody {
+  transform: translateY(0px) /* Move text up by 5 pixels on hover */
+  
+}
 
+.space{
+  background-color: #F6F6F6;
+  height:100px;
+}
 .redHeadButton {
   border-radius: 20px;
   width: auto;
@@ -39,6 +47,11 @@ ul li:hover .card-body {
   padding: 7%;
   height: 400px;
 }
+.longCard{
+  background-color:#FFB025 ;
+  padding: 7%;
+  height: 400px;
+}
 .longCard .buyButton{
   position: absolute;
   bottom: 10px; 
@@ -49,7 +62,7 @@ ul li:hover .card-body {
   text-align: left;
   padding-top: 0px;
 }
-.longCard .card-body{
+.longCard .cardBody{
   font-size: 22px;
   font-style: normal;
   position: absolute;
@@ -65,7 +78,7 @@ ul li:hover .card-body {
   background-color: #DC0714;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5%;
+  padding-top: 7%;
 }
 
 .part1 ul {
@@ -244,12 +257,13 @@ ul li:hover .card-body {
   .part1 ul li,
   .part4 ul li,
   .part2 ul li {
-      flex: 1 1 100%; /* Stack items on very small screens */
+      flex: 1 1 calc(100% - 20px);/* Stack items on very small screens */
       margin: 10px 0; /* Vertical margin for spacing */
   }
   .part1{
     margin-top: 20.5%;
   }
+
 
 
 }
@@ -260,6 +274,9 @@ ul li:hover .card-body {
   padding-right: 20%;
   font-size: 25px;
 
+}
+.card4{
+width:300px;
 }
 @media (max-width: 768px) {
   .yellowdiv{

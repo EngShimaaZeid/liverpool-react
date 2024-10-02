@@ -5,7 +5,7 @@ function LongCard({ imgSrc, altText }) {
   return (
     <a  >
     <div class="longCard">
-        <p class="card-body">
+        <p class="cardBody">
             <span class="title">LFC Online Store</span>
             <span>
             Shop the latest LFC label fashion, souvenirs and more. LFC Official Members and season ticket holders get 10% off!

@@ -1,3 +1,29 @@
+
+.footer00{
+  height:200px;
+  padding: 10%;
+}
+.footer00 img{
+  height: 120px;
+  padding: 20%;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .footer00 {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 5% 10%; /* Responsive padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.footer00 img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    padding: 5%; /* Responsive padding for images */
+}
+
+}
 .footer0{
     background-color:#F6F6F6 ;
     padding-left: 5%;
@@ -35,8 +61,10 @@
   }
   
   .logoImage {
-    max-width: 100px; /* Adjust size as needed */
     height: auto;
+  }
+  .footer00 .logoImage{
+    height: 200px;
   }
   
   .footer1 {
@@ -61,6 +89,8 @@
   .footer2 {
     background-color: #B71515;
     height: 20%;
+    padding: 7%;
+    margin: -0.5em;
     justify-content: center;
   }
   
