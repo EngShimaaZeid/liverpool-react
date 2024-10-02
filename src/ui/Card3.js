@@ -1,7 +1,7 @@
 
 import React from 'react';
 import '../css/Card3.css'
-function LongCard({ imgSrc, altText }) {
+function Card3({ imgSrc, altText }) {
   return (
  
     <div class="card3">
@@ -14,7 +14,7 @@ function LongCard({ imgSrc, altText }) {
             </span>
 
             <span>
-                <img  class="card3Logo"src="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2022-06/womens-super-league-logo.webp?itok=d8ZVpAfO" />
+                <img  class="card3Logo" src={imgSrc} />
             </span>
         </div>
         <div class="cardBody cardTable">
@@ -55,4 +55,4 @@ function LongCard({ imgSrc, altText }) {
   
   );
 }
-export default LongCard;
+export default Card3;

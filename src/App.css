@@ -5,15 +5,40 @@ ul li:hover .cardBody {
   transform: translateY(-7px); /* Move text up by 5 pixels on hover */
   
 }
-.card3 ul li:hover .cardBody {
-  transform: translateY(0px) /* Move text up by 5 pixels on hover */
+.card3,.card5 ul li:hover .cardBody {
+  transform: none /* Move text up by 5 pixels on hover */
   
 }
-
-.space{
+.space {
   background-color: #F6F6F6;
-  height:100px;
+  height: 150px; /* Consider using min-height for flexibility */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding-left: 5%; /* Use percentage for responsive padding */
+  padding-right: 5%; /* Add right padding for better balance */
+  padding-top: 5%; /* Maintain top padding */
+  padding-bottom: 5%; /* Add bottom padding for balance */
 }
+
+/* Media Queries for further adjustments */
+@media (max-width: 768px) {
+  .space {
+    height: 120px; /* Adjust height for smaller screens */
+    padding-left: 10%; /* Increase left padding */
+    padding-right: 10%; /* Increase right padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .space {
+    height: 100px; 
+    width:150px;
+    padding-left: 15%; 
+    padding-right: 20%; 
+  }
+}
+
 .redHeadButton {
   border-radius: 20px;
   width: auto;
@@ -281,7 +306,7 @@ width:300px;
 @media (max-width: 768px) {
   .yellowdiv{
 
-  font-size:10  px;
+  font-size:10 px;
   }
 }
 @media (max-width: 480px) {
@@ -306,4 +331,11 @@ width:300px;
   aspect-ratio: 1; 
   object-fit: cover; 
   max-width: 700px; 
+}
+.ad3{
+  align-items: center;
+  height:100px!important;
+  width:500px!important;
+  border:1px solid #FFF;
+
 }

@@ -7,9 +7,9 @@ function App() {
     <div class="part2">
       <button class="blackHeadButton ">Fixtures</button>
       <ul>
-        <li ><Card3  imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/kieran-morrison-u21s-promo-27092024.webp?itok=IpamwwHQ&width=1680"/></li>
-        <li><Card3 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/team-news-v-wolves-alisson-27092024.webp?itok=x9Dlu7yR&width=1680"/></li>
-        <li ><Card3 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/ea-fc-25-ratings-270924.webp?itok=Ed9EivKq&width=1680"/></li>
+        <li ><Card3  imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2022-04/Competition%3DMen_%20Premier%20League%2C%20Color%3DColor.webp?itok=DdkzpVUw"/></li>
+        <li><Card3 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2022-06/womens-super-league-logo.webp?itok=d8ZVpAfO"/></li>
+        <li ><Card3 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2022-06/uefa-youth-league-logo.webp?itok=f0kSD64e"/></li>
        
       </ul>
     </div>

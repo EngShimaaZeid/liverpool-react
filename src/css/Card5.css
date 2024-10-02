@@ -1,0 +1,90 @@
+.card5{
+    padding: 3%;
+    width:400px;
+    border-color: #222!important;
+
+    
+  }
+  .title1{
+    color: black;
+    font-size: xx-large;
+    
+  }
+  .title2{
+    color:#767676;
+    text-transform: uppercase;
+    padding: 3%;
+  }
+  .title3{
+    color:#D6D6D6;
+    text-transform: uppercase;
+    padding: 3%;
+    padding-bottom: 0px;
+  }
+  .card5 .cardBody{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 1%;
+    margin: 5px;
+  }
+  .card5 .cardTable{
+    padding-top: 5%;
+  }
+  .cardTableItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    margin: 5px;
+    color:gray;
+    border-bottom: grey;
+    border-right: 1px;
+    border-color: brown;
+    
+
+  }
+ 
+  .card5 .card3Logo{
+    padding-right: 0px!important;
+    width:100px!important;
+    height:100px!important;
+  }
+  .gray{
+    color:gray;
+    text-transform: uppercase;
+
+  }
+  .card5 .card5Button{
+    position: relative;
+    bottom: 5%; 
+    text-align: left;
+    padding-top: 0px;
+    background-color:transparent;
+    border-color: transparent;
+    color: #515151;
+    padding: 10%;
+    
+    font-family: Oswald;
+    text-transform: uppercase;
+    left:35%;
+    font-size: 12px;
+    font-weight: bolder;
+  
+  }
+  .card5 .rightlogo{
+    padding-right: 0px;
+    width: 10px!important;
+    
+  
+  }
+ 
+  .card3 .propDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  .prop{
+    text-align: left;
+  
+  }
