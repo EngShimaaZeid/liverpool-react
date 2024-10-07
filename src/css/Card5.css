@@ -2,9 +2,12 @@
     padding: 3%;
     width:400px;
     border-color: #222!important;
-
+    background: linear-gradient(115deg, white 50%,#F6F6F6 50%);
+    border-color: gray!important;
+  
     
   }
+  
   .title1{
     color: black;
     font-size: xx-large;
@@ -27,6 +30,7 @@
     align-items: left;
     padding: 1%;
     margin: 5px;
+
   }
   .card5 .cardTable{
     padding-top: 5%;
@@ -87,4 +91,7 @@
   .prop{
     text-align: left;
   
+  }
+  .border{
+    border-color: red;
   }

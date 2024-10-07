@@ -6,7 +6,10 @@ function App() {
   return (
 
     <div class="part1">
-      <button class="redHeadButton ">Headline</button>
+      <button class="redHeadButton ">Headlines</button>
+      {/*<button class="card5Button">All News 
+      <a class="moreArrow"> &gt;</a>
+      </button>*/}
       <ul>
         <li ><Card1  imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/kieran-morrison-u21s-promo-27092024.webp?itok=IpamwwHQ&width=1680"/></li>
         <li><Card1 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/team-news-v-wolves-alisson-27092024.webp?itok=x9Dlu7yR&width=1680"/></li>

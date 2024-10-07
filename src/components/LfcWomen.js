@@ -6,6 +6,10 @@ function App() {
 
     <div class="part1">
       <button class="redHeadButton title">LFC Women</button>
+      /*<button class="card5Button">More News 
+      <a class="moreArrow"> &gt;</a>
+      </button>*/
+      
 
       <ul>
         <li ><Card1 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/liverpool-fc-women-fans-27092024.webp?itok=_qp953S3&width=1680"/></li>

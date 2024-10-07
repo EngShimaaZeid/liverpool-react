@@ -1,24 +1,120 @@
 body {
   font-family: Oswald;
+  width: 100%;
 }
 ul li:hover .cardBody {
-  transform: translateY(-7px); /* Move text up by 5 pixels on hover */
-  
+  transform: translateY(-7px); 
 }
 .card3,.card5 ul li:hover .cardBody {
-  transform: none /* Move text up by 5 pixels on hover */
+  transform: none 
   
 }
-.space {
-  background-color: #F6F6F6;
-  height: 150px; /* Consider using min-height for flexibility */
-  display: flex; /* Use flexbox for alignment */
+.Ads2 {
+  display: flex; /* Flexbox for larger screens */
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
-  padding-left: 5%; /* Use percentage for responsive padding */
-  padding-right: 5%; /* Add right padding for better balance */
-  padding-top: 5%; /* Maintain top padding */
-  padding-bottom: 5%; /* Add bottom padding for balance */
+  padding: 0; /* Remove padding */
+  text-align: center; /* Center text inside the square ads */
+}
+
+/* Media Queries for Small Devices */
+
+/* For tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .Ads2 {
+    display: block; /* Switch to block layout */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .Ads2 {
+    display: block; /* Ensure block layout for small screens */
+    padding: 5%; /* Add some padding for smaller screens */
+    text-align: left; /* Align text to the left for readability */
+  }
+}
+
+.squareAds {
+  height: 300px;
+  width: 300px;
+  padding: 2%; /* Padding inside the SquareAds */
+  padding-right: 20px;
+  padding-top: 7%;
+}
+
+/* Default styles */
+.space2 {
+  background-color: #F6F6F6;
+  height: 150px; /* Fixed height for larger screens */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding-left: 5%; /* Responsive padding */
+  padding-right: 5%; 
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.space1 {
+  height: 90px;
+  display: flex; /* Flexbox for centering */
+  align-items: center!important; /* Center items vertically */
+  justify-content: center!important; /* Center items horizontally */
+  padding: 20px; /* Standard padding */
+}
+.sticky .space1
+{
+  display:none;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .space2 {
+    height: auto; /* Allow flexible height for smaller screens */
+    padding: 4%; /* Adjust padding for tablets */
+  }
+
+  .space1 {
+    height: auto; /* Flexible height for tablets */
+    padding: 15px; /* Reduce padding */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .space2 {
+    height: auto; /* Use auto for flexible height */
+    padding: 3%; /* Reduce padding for mobile */
+    flex-direction: column; /* Stack content vertically on mobile */
+  }
+
+  .space1 {
+    height: auto; /* Auto height for mobile */
+    padding: 10px; /* Reduce padding for better fit */
+    flex-direction: column; /* Stack content vertically */
+  }
+}
+
+.card5Button{
+  position: relative;
+  bottom: 5%; 
+  text-align: right!important;
+  background-color:transparent;
+  border-color: transparent;
+  color: black;
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bolder;
+  right:-65%;
+
+}
+.card5Button:hover{
+  transform: translateX(9px); 
 }
 
 /* Media Queries for further adjustments */
@@ -73,9 +169,11 @@ ul li:hover .cardBody {
   height: 400px;
 }
 .longCard{
-  background-color:#FFB025 ;
+  background-color:#FFB025 !important;
   padding: 7%;
-  height: 400px;
+  height: 100px;
+  border-color: #000;
+  z-index: 9999;
 }
 .longCard .buyButton{
   position: absolute;
@@ -99,11 +197,46 @@ ul li:hover .cardBody {
 
 
 }
+
+.longCardMenu .longCard{
+  padding: 7%;
+  height: 100px;
+  border-color: #000;
+  z-index: 9999;
+}
+.longCardMenu .longCard .buyButton{
+  position: absolute;
+  bottom: 10px; 
+  transform: translateX(-50%); 
+  height: 15%;
+  padding-right: 10px;
+  text-align: left;
+  padding-top: 0px;
+  width: auto;
+}
+.longCardMenu .longCard .cardBody{
+  font-size: 22px;
+  font-style: normal;
+  position: absolute;
+  top: 10px; 
+  padding-right: 5%;
+  background-color: #DC0714;
+  color:white;
+  width: 300px;
+  right: 10px;
+  height: 400px;
+
+}
+.longCardMenu .longCard .title{
+  font-size: 24px;
+
+
+}
 .part1 {
   background-color: #DC0714;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 7%;
+  padding: 20px;
+  padding-top: 5%;
+  z-index: 1;
 }
 
 .part1 ul {
@@ -144,7 +277,9 @@ ul li:hover .cardBody {
 
 .part2 {
   background-color: white;
-  padding-bottom: 10%;
+  padding: 5%;
+  padding-bottom: 20px;
+
 }
 .card2Img{
   padding: 0px;    
@@ -160,7 +295,7 @@ ul li:hover .cardBody {
     max-width: 150px;
     height: auto;
     background-color: black;
-    margin-left: 5%;
+    margin-left: 1.5%;
     margin-top: 5%;
     padding: 10px;
     border: none;
@@ -189,8 +324,11 @@ ul li:hover .cardBody {
 
 .part4 ul li:hover {
   background-color: #f0f0f0!important;
+  color: black;
 }
-
+.part4 .cardBody{
+  color: #000;
+}
 .part2 ul li .text {
   transition: transform 0.3s; /* Smooth transition for text */
 }
@@ -316,26 +454,48 @@ width:300px;
   }
 }
 
-.floatpart{
+.floatPart{
   background-color: white;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 20%;
   padding-right: 25%;
   padding-bottom: 8%;
   font-size: 20px;
 
 }
-.floatpart img{
+.floatPart img{
   width:100%;
   width: 100%;
   aspect-ratio: 1; 
   object-fit: cover; 
   max-width: 700px; 
 }
-.ad3{
+.ad3 {
   align-items: center;
-  height:100px!important;
-  width:500px!important;
-  border:1px solid #FFF;
+  height: 100px!important; /* Fixed height for larger screens */
+  width: 500px; /* Fixed width for larger screens */
+  border: 1px solid #FFF; /* White border */
+}
 
+/* Media Queries for Responsive Design */
+
+/* For tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .ad3 {
+    width: 100%; /* Make the ad take full width of the container */
+    height: 80px!important; /* Reduce height for tablets */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .ad3 {
+    width: 100%; /* Full width on mobile screens */
+    height: auto!important; /* Let height adjust automatically */
+    padding: 10px; /* Add some padding to ensure readability */
+    border: 1px solid #FFF; /* Keep border intact */
+  }
+}
+.cards {
+  z-index:1!important;
 }
