@@ -14,7 +14,9 @@
   
 }
 
-#cCarousel .arrow {
+
+
+#cCarousel .arrow  {
   position: absolute;
   top: 50%;
   display: flex;
@@ -26,8 +28,26 @@
   z-index: 1;
   font-size: 26px;
   color: white;
-  background: #00000072;
+  background: black;
   cursor: pointer;
+}
+
+
+#cCarousel .arrowRight   {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 26px;
+  color: white;
+  background: black;
+  cursor: pointer;
+  right:0
 }
 
 #cCarousel #prev {
@@ -68,6 +88,14 @@
   left: 0px;
 }
 
-
-
+.fa-chevron-right{
+background-color: red;
+right:0;
+z-index: 1000;
+}
+.fa-chevron-left{
+  background-color: pink;
+  left:0;
+  
+  }
 

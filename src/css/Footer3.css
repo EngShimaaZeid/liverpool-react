@@ -1,0 +1,140 @@
+.footer3 {
+    background-color: #911712;
+    color: white;
+    padding: 3%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+/* Container for left and right parts */
+.footer3part0 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.footer3Part1 {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.footer3 ul li {
+    list-style: none;
+    margin-bottom: 5%!important;
+    padding: 0;
+}
+
+.footer3 ul li:hover {
+    color: lightgray;
+}
+
+/* Copyright section */
+.copyRights {
+    margin-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.footer3Part0Right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.socialMediaIcons {
+    display: flex;
+    gap: 20px;
+}
+
+.app {
+    padding-top: 50px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Wrap content for smaller screens */
+}
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SVG icons */
+svg {
+    width: 40px;
+    height: 24px;
+}
+
+/* Additional icon customization */
+svg .c2 {
+    width: 400px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .footer3Part1 {
+        flex-direction: column;
+        align-items: center; /* Center the content */
+        gap: 20px; /* Reduce gap between elements */
+    }
+
+    .footer3part0 {
+        flex-direction: column;
+        align-items: center; /* Center the items in the footer */
+    }
+
+    .app {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyRights {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .footer3 {
+        padding: 5%; /* Increase padding on mobile */
+        font-size: 8px; /* Reduce font size for smaller screens */
+    }
+
+    .footer3Part1 {
+        gap: 10px; /* Reduce gap between elements */
+    }
+
+    .socialMediaIcons {
+        gap: 10px; /* Reduce gap between icons */
+    }
+
+    .app {
+        gap: 20px;
+    }
+
+    .copyRights {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 8px; /* Reduce copyright text size */
+    }
+
+    svg {
+        width: 30px; /* Reduce icon size */
+        height: 20px;
+    }
+
+    svg .c2 {
+        width: 200px; /* Adjust for smaller screens */
+        height: 20px;
+        margin-left: 10px;
+    }
+}

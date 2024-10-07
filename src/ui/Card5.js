@@ -5,6 +5,7 @@ function Card5({ imgSrc, title1 }) {
   return (
  
     <div class="card5">
+        <div class="border">
         <div class="cardBody">
             <span>
 
@@ -57,6 +58,8 @@ function Card5({ imgSrc, title1 }) {
             <button class="card5Button">View Profile </button>
 
         </div>
+        </div>
+        
       
         
         
