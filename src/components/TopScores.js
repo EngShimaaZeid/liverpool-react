@@ -44,9 +44,9 @@ function App() {
   return (
     <div className="part2">
       <button className="blackHeadButton">Top Scores 2024-25</button>
-      <button class="card5Button">All Players Profiles
+      {/*<button class="card5Button">All Players Profiles
       <a class="moreArrow"> &gt;</a>
-      </button>
+      </button>*/}
       <section>
         <div id="cCarousel">
           <div className="arrow left" ref={prevRef}>
@@ -63,7 +63,7 @@ function App() {
               style={{
                 left: `${leftValue}px`,
                 transition: "left 0.3s ease-in", 
-                position: 'relative', 
+                
               }}
             >
               

@@ -48,7 +48,7 @@ const FloatingBox = ({ floatPartRef }) => {
   if (boxPosition === null) return null;
 
   return (
-    <div className="floating-box" style={{ top: `${boxPosition}px`, position: 'absolute', right: '0' }}>
+    <div className="floatingBox" style={{ top: `${boxPosition}px`, position: 'absolute', right: '0' }}>
       <Card1 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/inside-anfield-west-ham-26092024_0.webp?itok=NDdpyUFb&width=1680"/>
       <br />
       <Card1 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/u18s-live-promo-27092024.webp?itok=99curLPx&width=1680"/>

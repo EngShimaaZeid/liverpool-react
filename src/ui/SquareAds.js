@@ -5,8 +5,8 @@ function SquareAds() {
 
   useEffect(() => {
     const myImages = [
-      "https://tpc.googlesyndication.com/simgad/13279867605339036140",
-      "https://tpc.googlesyndication.com/simgad/18104630861067988173"
+      "https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/ea-fc-25-ratings-270924.webp?itok=Ed9EivKq&width=1680",
+      "https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-09/liverpool-fc-women-fans-27092024.webp?itok=_qp953S3&width=1680"
     ];
 
     // Functiona to change the image

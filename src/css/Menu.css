@@ -1,9 +1,8 @@
 /* Base Styles */
 header {
-  width: 100%;
+  width: auto;
   background-color: #DC0714;
   color: white;
-  box-shadow: 1px 1px 10px #000;
   font-family: Oswald;
   transition: top 0.3s; /* Smooth transition */
   z-index: 1000;
@@ -11,16 +10,16 @@ header {
 
 #menu {
   background-color: #DC0714;
-    padding: 10px 5%;
     position: relative;
-    left: 0;
-    right: 0;
+    
     margin: 0;
     font-family: Oswald;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 9999!important;
+    width: 100%;
+    top:50;
   }
 
 .leftLogo {
@@ -36,9 +35,10 @@ header {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 80%;
   z-index: 1000;
   background-color: #000;
+  left: 10%;
 }
 
 #menu ul {
@@ -68,18 +68,44 @@ header {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 900px) {
+  .longCardMenu,.longCard, .space1 .ad3,.dropdown-content
+  {display: none!important;}
+ 
+header{
+  width:auto!important;
+  background-color: #DC0714!important;
+
+}
   #menu {
-    padding: 20px 5%;
+    padding-left: 5%;
+    top:0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: fixed;
+
+  top:-1px;
+  box-shadow: none;
+  width: auto;
+  justify-content: center;
 }
 
+
+.sticky{
+  left:0;
+}
 .leftLogo {
     width: 30px;
     height: auto; /* Maintain aspect ratio */
+    padding-left: 138px;
 }
 
 .rightLogo {
     width: 50px;
     height: auto; /* Maintain aspect ratio */
+    padding-left: 130px;
+
 }
 
 #menu ul {
@@ -99,8 +125,8 @@ header {
     display: block;
     position: relative;
     height: 60px;
-    left:-180px;
-}
+    width:10px;
+  }
 
 .nav-container .checkbox {
     position: absolute;
@@ -113,6 +139,7 @@ header {
     cursor: pointer;
     background-color: #DC0714; /* Optional: visible background */
 }
+
 
 .nav-container .hamburger-lines {
     position: absolute; /* Position absolutely */
@@ -144,6 +171,7 @@ header {
     text-align: left;
     z-index: 1000;
     background-color: white;
+    margin-left: -50px;
 
 
 }
@@ -154,6 +182,7 @@ header {
     font-weight: 70;
     font-family: Oswald;
     color: #6e6e6e;
+    margin: 3%;
 }
 
 
@@ -185,10 +214,12 @@ header {
 .dropdown {
   position: relative;
   display: inline-block;
-  position: fixed;
 
-  top:10%
- 
+  top:65px;
+  box-shadow: none;
+  width: auto;
+  justify-content: center;
+  left:20%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -206,19 +237,20 @@ header {
   display: none;
   position: absolute;
   background-color: white;
-  width:80% ;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
  position: fixed;
 color:#6e6e6e;
  top:35%  ;
- left:5%;
+ left:10%;
  padding: 5%;
  transition: ease-in;
  z-index: 9999;
+ width: 70%;
 }
 
 .sticky .dropdown-content{
-  top:15%
+  top:7%;
+  width:auto ;
+right:10%;
 }
 
 /* Links inside the dropdown */
@@ -236,6 +268,53 @@ color:#6e6e6e;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
  
-.longCard{
-  background-color: #000;
+
+.longCardMenu .longCard{
+  padding: 7%;
+  height: 200px;
+  width:100px;
+  border-color: #000;
+  z-index: 9999;
+  background-color: transparent;
+}
+.longCardMenu .longCard .buyButton{
+  position: relative;
+  bottom:5%; 
+  right: 5%;
+  text-align: left;
+  padding-top: 0px;
+  width: auto;
+  display:none;
+}
+.longCardMenu .longCard .cardBody{
+  font-size: 12px;
+  font-style: normal;
+  position: absolute;
+  top: 10px; 
+  padding:5%;
+  background-color: #DC0714;
+  color:white;
+  width: 20%;
+  height: 60%;
+  right: 5%;
+
+}
+.nav-container .longCardMenu .longCard .cardBody{
+  font-size: 12px;
+  font-style: normal;
+  position: absolute;
+  top: 10px; 
+  padding:5%;
+  background-color: #DC0714;
+  color:white;
+  width: 20%;
+  height: 60%;
+  left: 5%;
+  z-index: 1000;
+
+}
+.longCardMenu .longCard .title{
+  font-size: 24px;
+
+
 }

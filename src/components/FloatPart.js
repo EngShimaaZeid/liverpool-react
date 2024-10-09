@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 const FloatPart = forwardRef((props, ref) => {
   return (
-    <div className="floatPart" ref={ref} style={{ position: 'relative' }}>
+    <div className="floatPart" ref={ref} >
       <button class="blackHeadButton title">Have you seen?</button>
 
       <h3>

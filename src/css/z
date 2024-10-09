@@ -1,0 +1,57 @@
+import React, { useState, useRef } from "react";
+import Card5 from "../ui/Card5";
+
+function App() {
+  const items = [
+    {
+      imgSrc: "https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2024-06/luis-diaz-profile-headshot-202425.webp?itok=WkV90Wpr",
+      title: "Luis Dias",
+    },
+    {
+      imgSrc: "https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2024-08/mohamed-salah-headshot-v3-2024.webp?itok=sPITcM67",
+      title: "Mohammed Salah",
+    },
+    {
+      imgSrc: "https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2024-06/diogo-jota-profile-headshot-202425.webp?itok=CsWBVQ4v",
+      title: "Diogo Jota",
+    },
+    {
+      imgSrc: "https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2024-08/mohamed-salah-headshot-v3-2024.webp?itok=sPITcM67",
+      title: "Mohammed Salah",
+    },
+    {
+      imgSrc: "https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2024-06/diogo-jota-profile-headshot-202425.webp?itok=CsWBVQ4v",
+      title: "Diogo Jota",
+    },
+    // Add more items as needed
+  ];
+
+
+  return (
+    
+        <div className="part2">
+          <button className="blackHeadButton">Top Scores 2024-25</button>
+          <ul className="logoList">
+        {items.map(logo => (
+          <li key={logo.id}>
+            <img src={logo.src}  className="logoImage" />
+          </li>
+        ))}
+      </ul>
+        </div>
+      
+  );
+}
+
+export default App;
+
+
+<div class="part2">
+<button class="blackHeadButton ">Top Scores 2024-25</button>
+<ul>
+  <li ><Card5  imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2024-06/luis-diaz-profile-headshot-202425.webp?itok=WkV90Wpr" title1="Luis Dias"/></li>
+  <li><Card5 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2024-08/mohamed-salah-headshot-v3-2024.webp?itok=sPITcM67" title1="Mohammed Salah"/></li>
+  <li ><Card5 imgSrc="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2024-06/diogo-jota-profile-headshot-202425.webp?itok=CsWBVQ4v" title1="Diogo Jota"/></li>
+ 
+</ul>
+</div>

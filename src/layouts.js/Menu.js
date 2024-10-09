@@ -42,7 +42,7 @@ function Menu() {
                     </span>
                     <div >
         <div class=" nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
+            <input class="checkbox x" type="hidden" name="" id="" />
             <div class="hamburger-lines">
               <span class="line line1"></span>
               <span class="line line2"></span>
@@ -56,7 +56,11 @@ function Menu() {
             <li><a href="#">blogs</a></li>
             <li><a href="#">portfolio</a></li>
             <li><a href="#">contact</a></li>
+            <div class="longCardMenu">
+            <LongCard/>
+        </div>
           </div>
+          
         </div>
       </div>
                     <span>
@@ -87,7 +91,9 @@ function Menu() {
           <li>Accessibility</li>
           <li>Cookie Settings</li>
         </ul>
-        <LongCard/>
+        <div class="longCardMenu">
+            <LongCard/>
+        </div>
 
       </div>
                     </div>

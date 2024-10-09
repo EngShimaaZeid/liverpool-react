@@ -3,7 +3,6 @@ import React from 'react';
 
 function LongCard({ imgSrc, altText }) {
   return (
-   <div class="longCardMenu">
       <div class="longCard">
         <p class="cardBody">
             <span class="title">LFC Online Store</span>
@@ -16,7 +15,7 @@ function LongCard({ imgSrc, altText }) {
                 Buy Now 
                 </span>
             </button>
-    </div>
+    
    </div>
     
    

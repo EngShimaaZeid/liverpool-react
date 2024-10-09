@@ -23,6 +23,7 @@ const App = () => {
       <div class="space1">
         <Ads/>
       </div>   
+         <Menu/>
       <HeadLines/>
       <Fixtures/>
       

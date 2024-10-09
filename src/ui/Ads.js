@@ -6,8 +6,8 @@ function Ads() {
 
   useEffect(() => {
     const myImages = [
-      "https://tpc.googlesyndication.com/simgad/16833327676687632350",
-      "https://tpc.googlesyndication.com/simgad/9334605402723005980"
+      "https://s0.2mdn.net/dfp/368211/5123769003/1727188059247/media/66a0af9f1d93cc165ccb6c8cdb214cb3.svg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEtrYW5QTtvpW8AcX1jm464z33tiuaM8No_A&s"
     ];
 
     // Function to change the image
