@@ -215,11 +215,11 @@ header{
   position: relative;
   display: inline-block;
 
-  top:65px;
+  top:10%;
   box-shadow: none;
-  width: auto;
+  width: 100%;
   justify-content: center;
-  left:20%;
+  padding-right: 5%;
 }
 
 /* Dropdown Content (Hidden by Default) */
