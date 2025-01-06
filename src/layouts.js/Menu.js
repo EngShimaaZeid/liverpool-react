@@ -51,11 +51,11 @@ function Menu() {
           <div class="logo">
           </div>
           <div class="menu-items menuToggle" >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blogs</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="/" >Home</a></li>
+            <li><a href="/">about</a></li>
+            <li><a href="/">blogs</a></li>
+            <li><a href="/">portfolio</a></li>
+            <li><a href="/">contact</a></li>
             <div class="longCardMenu">
             <LongCard/>
         </div>
@@ -68,13 +68,13 @@ function Menu() {
                     </span>
 
                     <ul id="menuList" className={isOpen ? 'show' : ''}>
-                        <li><a href="#" class="dropbtn">News</a></li>
-                        <li><a href="#" class="dropbtn">Fixtures & Teams</a></li>
-                        <li><a href="#" class="dropbtn">Tickets & Booking</a></li>
-                        <li><a href="#"class="dropbtn">Shop</a></li>
-                        <li><a href="#" class="dropbtn">Retail App</a></li>
-                        <li><a href="#" class="dropbtn">Video</a></li>
-                        <li><a href="#" class="dropbtn">More</a></li>
+                        <li><a href="/" class="dropbtn">News</a></li>
+                        <li><a href="/" class="dropbtn">Fixtures & Teams</a></li>
+                        <li><a href="/" class="dropbtn">Tickets & Booking</a></li>
+                        <li><a href="/"class="dropbtn">Shop</a></li>
+                        <li><a href="/" class="dropbtn">Retail App</a></li>
+                        <li><a href="/" class="dropbtn">Video</a></li>
+                        <li><a href="/" class="dropbtn">More</a></li>
                     </ul>
                     <div class="dropdown-content">
                         

@@ -26,7 +26,7 @@ function Footer2() {
       <ul className="logoList">
         {footer2.map(logo => (
           <li key={logo.id}>
-            <img src={logo.src}  className="logoImage" />
+            <img src={logo.src}  className="logoImage" alt={logo.alt}/>
           </li>
         ))}
       </ul>

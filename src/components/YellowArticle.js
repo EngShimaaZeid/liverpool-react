@@ -1,6 +1,6 @@
 import React from "react";
-import YellowCard from "../ui/YellowCard"
-import Card4 from "../ui/Card4"
+//import YellowCard from "../ui/YellowCard"
+//import Card4 from "../ui/Card4"
 function App() {
   return (
 

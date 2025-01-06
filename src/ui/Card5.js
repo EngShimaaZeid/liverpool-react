@@ -16,7 +16,7 @@ function Card5({ imgSrc, title1 }) {
             </span>
 
             <span>
-                <img  class="card3Logo" src={imgSrc}/>
+                <img  class="card3Logo" src={imgSrc} alt="footballImage"/>
             </span>
         </div>
         <div class="cardTable">

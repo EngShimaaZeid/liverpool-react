@@ -28,7 +28,7 @@ function SquareAds() {
 
   return (
     <span>
-      <img ref={imgRef}   class="squareAds" src="" alt="Image Here" />
+      <img ref={imgRef}   class="squareAds" src="" alt="FootballImage" />
     </span>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Card3 from "./Card3";
+//import Card3 from "./Card3";
 
 function Ads() {
   const imgRef = useRef(null); // Create a ref to hold the image element
@@ -29,7 +29,7 @@ function Ads() {
 
   return (
     <div >
-      <img ref={imgRef} class="ad3" src="" alt="Image Here" />
+      <img ref={imgRef} class="ad3" src="" alt="footballImage" />
     </div>
   );
 }

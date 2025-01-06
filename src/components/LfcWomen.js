@@ -7,7 +7,6 @@ function App() {
     <div class="part1">
       <button class="redHeadButton title">LFC Women</button>
       <button class="card5Button" >More News 
-      <a class="moreArrow"> &gt;</a>
       </button>
       
 

@@ -14,18 +14,18 @@ function Card3({ imgSrc, altText }) {
             </span>
 
             <span>
-                <img  class="card3Logo" src={imgSrc} />
+                <img  class="card3Logo" src={imgSrc} alt="footballImage"/>
             </span>
         </div>
         <div class="cardBody cardTable">
         <div class="team">
             <div class="teamDiv">
-            <img  class="leftLogo"src="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2022-06/wolverhampton-wanderers-crest.webp?itok=-aZQAqCf" />
+            <img alt="footballimage" class="leftLogo"src="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2022-06/wolverhampton-wanderers-crest.webp?itok=-aZQAqCf" />
     
             <h4>Wolves</h4>
            </div>
            <div class="teamDiv">
-            <img  class="leftLogo" src="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2022-06/west-ham-united-crest.webp?itok=Irb5nARg" />
+            <img alt="footballimage"  class="leftLogo" src="https://backend.liverpoolfc.com/sites/default/files/styles/sm/public/2022-06/west-ham-united-crest.webp?itok=Irb5nARg" />
     
             <h4>Liverpool</h4>
            </div>
